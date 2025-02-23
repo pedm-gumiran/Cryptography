@@ -1,0 +1,221 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+body {
+  align-items: center;
+  border: 5px solid black;
+  width: 300px;
+  height: 26rem;
+  border-radius: 3px;
+  margin-top: 6rem;
+  margin-left: 5rem;
+}
+
+.frmtitle {
+  font-size: 20px;
+  color: #007bff;
+  margin-left: 2rem;
+}
+
+.inputs {
+  margin-top: 3rem;
+}
+.input-container {
+  position: relative;
+  width: 250px;
+  margin: 20px;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+}
+
+.input-container label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #aaa;
+  pointer-events: none;
+  transition: 0.3s ease-in-out;
+  background: white;
+  padding: 0 5px;
+}
+
+.input-container input:focus + label,
+.input-container input:not(:placeholder-shown) + label {
+  top: 5px;
+  font-size: 14px;
+  color: #007bff;
+}
+
+.buttons {
+  width: 300px;
+  text-align: center;
+}
+button {
+  width: 100px;
+  height: 30px;
+  font-size: 20px;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+  border: none; /* To remove the outline:*/
+}
+button:hover {
+  background-color: #094a94;
+}
+.result {
+  margin-left: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.result textarea{
+  width: 15rem;
+  height: 2rem;
+  font-size: 19px;
+}
+
+#clear-btn {
+  background-color: rgb(255, 25, 25);
+  margin-top: 1rem;
+}
+
+#clear-btn:hover {
+  background-color: rgb(128, 16, 16);
+}
+
+.result {
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* for the css */
+/* Swing animation */
+@keyframes swing {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* Vibrate animation */
+@keyframes vibrate {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-3px);
+  }
+  100% {
+    transform: translateX(3px);
+  }
+}
+
+/* Apply swing animation */
+.swing {
+  animation: swing 0.5s ease;
+}
+
+/* Apply vibrate animation */
+.vibrate {
+  animation: vibrate 0.2s ease;
+}
+
+@media (max-width: 480px) {
+
+}
+
+/* For media queries in different screensizes */
+/* Small Devices (Larger Mobile Phones) */
+@media (min-width: 768px) {
+  body {
+    align-items: center;
+    border: 5px solid black;
+    width: 500px;
+    height: 40rem;
+    border-radius: 3px;
+    margin-top: 6rem;
+    margin-left: 9rem;
+  }
+
+  .frmtitle {
+    font-size: 40px;
+    color: #007bff;
+    margin-left: 4rem;
+  }
+
+  .coder {
+    margin-left: 9rem;
+  }
+
+  .input-container {
+    position: relative;
+    width: 450px;
+    margin: 20px;
+    height: 4rem;
+
+  }
+  .input-container input {
+    font-size: 20px;
+  }
+
+  .buttons {
+    width: 500px;
+  }
+
+  button {
+    width: 150px;
+    height: 50px;
+    font-size: 30px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+    border: none; /* To remove the outline:*/
+  }
+  .input-container label {
+    top: 30%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #aaa;
+    pointer-events: none;
+    transition: 0.3s ease-in-out;
+    background: white;
+    padding: 0 5px;
+  }
+
+  .result textarea{
+    width: 27rem;
+    height: 5rem;
+    font-size: 30px;
+  }
+
+}
