@@ -9,7 +9,7 @@ body {
   height: 26rem;
   border-radius: 3px;
   margin-top: 6rem;
-  margin-left: 5rem;
+  margin-left: 2rem;
 }
 
 .frmtitle {
@@ -78,7 +78,7 @@ button:hover {
   margin-top: 1.5rem;
 }
 
-.result textarea{
+.result textarea {
   width: 15rem;
   height: 2rem;
   font-size: 19px;
@@ -148,10 +148,6 @@ button:hover {
   animation: vibrate 0.2s ease;
 }
 
-@media (max-width: 480px) {
-
-}
-
 /* For media queries in different screensizes */
 /* Small Devices (Larger Mobile Phones) */
 @media (min-width: 768px) {
@@ -180,7 +176,6 @@ button:hover {
     width: 450px;
     margin: 20px;
     height: 4rem;
-
   }
   .input-container input {
     font-size: 20px;
@@ -212,10 +207,9 @@ button:hover {
     padding: 0 5px;
   }
 
-  .result textarea{
+  .result textarea {
     width: 27rem;
     height: 5rem;
     font-size: 30px;
   }
-
 }
